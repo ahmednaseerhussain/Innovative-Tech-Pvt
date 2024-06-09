@@ -1,38 +1,47 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Services from './components/Services/Services';
+import Testimonials from './components/Testimonial/Testimonial';
+import Portfolio from './components/Blogs/Portfolio';
+import Contact from './pages/Contact';
+import BrandsLogo from './components/BrandsLogo/BrandsLogo'
+import Footer from './components/Footer/Footer'
+import { Element } from 'react-scroll';
 
-// Component import
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import BrandsLogo from "./components/BrandsLogo/BrandsLogo.jsx";
-import Services from "./components/Services/Services";
-import Testimonial from "./components/Testimonial/Testimonial";
-import BlogsComp from "./components/Blogs/BlogsComp.jsx";
-import Footer from "./components/Footer/Footer";
-
-const App = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 800,
-      easing: "ease-in",
-      delay: 100,
-    });
-    AOS.refresh();
-  }, []);
-
+function App() {
   return (
-    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <BrandsLogo />
-      <Services />
-      <Testimonial />
-      <BlogsComp />
-      <Footer />
+    <div>
+      <Router>
+        <Navbar />
+        <Element name="home" className="section">
+          <Home />
+        </Element>
+        <Element name="brands" className="section">
+          <BrandsLogo />
+        </Element>
+        <Element name="services" className="section">
+          <Services />
+        </Element>
+        <Element name="testimonials" className="section">
+          <Testimonials />
+        </Element>
+        <Element name="portfolio" className="section">
+          <Portfolio />
+        </Element>
+        
+          <Element name="contact" className='section'>
+          <Contact />
+          </Element>
+        
+        <Element name="footer" className="section">
+          <Footer />
+        </Element>
+        
+      </Router>
     </div>
   );
-};
+}
 
 export default App;

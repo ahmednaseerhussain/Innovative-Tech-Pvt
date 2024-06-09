@@ -39,7 +39,7 @@ const skillsData = [
 ];
 const Services = () => {
   return (
-    <>
+    <section id="services">
       <span id="about"></span>
       <div className="bg-gray-100 dark:bg-black dark:text-white py-12 sm:grid sm:place-items-center">
         <div className="container">
@@ -47,9 +47,9 @@ const Services = () => {
           <div className="pb-12 text-center space-y-3">
             <h1
               data-aos="fade-up"
-              className="text-3xl font-semibold sm:text-3xl text-violet-950 dark:text-primary"
+              className="text-3xl font-semibold sm:text-3xl text-gray-950 dark:text-primary"
             >
-              Explore Our Services
+              Explore Our Services <span className="text-gradient font-bold text-[40px]"> . </span>
             </h1>
             <p
               data-aos="fade-up"
@@ -89,7 +89,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

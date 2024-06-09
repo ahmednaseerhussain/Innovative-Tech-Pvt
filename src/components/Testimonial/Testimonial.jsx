@@ -24,8 +24,8 @@ const testimonialData = [
 
 const Testimonial = () => {
   var settings = {
-    dots: true,
-    arrows: false,
+    dots: false,
+    arrows: true,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -38,7 +38,7 @@ const Testimonial = () => {
   };
   return (
     <>
-      <div className="py-10">
+      <div className="py-10 dark:bg-gray-800">
         <div className="container">
           {/* testimonial section */}
           <div
@@ -48,7 +48,7 @@ const Testimonial = () => {
             <Slider {...settings}>
               {testimonialData.map(({ id, name, text, img }) => {
                 return (
-                  <div key={id} className="my-6">
+                  <div key={id} className="my-6 ">
                     {/* card */}
                     <div className="flex flex-col sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-gray-800 relative">
                       <img

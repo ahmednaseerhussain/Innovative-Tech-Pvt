@@ -13,8 +13,34 @@ html {
   .button-outline {
     @apply rounded-md border-2 border-primary hover:bg-primary/80 hover:text-black duration-500 py-2 px-6 text-primary tracking-wider;
   }
-
   .primary-btn {
-    @apply bg-primary text-white hover:bg-primary/80  duration-500 rounded-lg py-2 px-4;
+    @apply bg-gradient-custom  text-white hover:bg-primary/80 duration-500 rounded-lg py-2 px-4;
+  }
+  .bg-tertiary {
+    @layer bg-tertiay;
+  }
+  .dark .bg-tertiary {
+    @layer bg-gray-800; /* Adjust to a darker color for dark mode */
+  }
+  .text-white {
+    @layer text-white;
+  }
+  .dark .text-white {
+    @layer text-gray-100; /* Adjust to a lighter color for dark mode */
+  }
+  .placeholder-secondary {
+    @layer placeholder-secondary;
+  }
+  .dark .placeholder-secondary {
+    @layer placeholder-gray-400; /* Adjust to a lighter placeholder color for dark mode */
+  }
+
+  .bg-gradient-custom {
+    background: rgb(21,248,173);
+    background: linear-gradient(135deg, rgba(21,248,173,1) 0%, rgba(14,233,211,1) 35%, rgba(26,217,254,1) 100%);
+  }
+  
+  .text-gradient {
+    @apply bg-primary-gradient text-transparent bg-clip-text;
   }
 }
