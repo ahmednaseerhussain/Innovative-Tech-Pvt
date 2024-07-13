@@ -121,7 +121,7 @@ const Contact = () => {
         variants={{}}
         className=" bg-white dark:bg-black xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-      <ParticlesContainer className='h-full'/>
+      {/* <ParticlesContainer className='h-full'/> */}
         {/* Add any content or component for the right side of the contact section */}
       </motion.div>
     </div>

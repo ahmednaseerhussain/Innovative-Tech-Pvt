@@ -59,12 +59,10 @@ const Footer = () => {
           {/* company Details */}
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
-              Digital Agency
+              Innovative Tech Pvt. LTD
             </h1>
             <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit consectetur adipisicing elit ipsum
-              dolor sit amet consectetur. adipisicing{" "}
+            Developed a high-engagement Web apps, Mobile application, e-commerce platform with advanced security and seamless payments, enhancing scalability and performance through teamwork.{" "}
             </p>
             <br />
             {/* Social Handle */}

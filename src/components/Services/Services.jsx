@@ -9,7 +9,7 @@ const skillsData = [
     icon: <FaCameraRetro className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Our app development service transforms your ideas into user-friendly applications tailored to your business needs. From concept to deployment, our experienced team delivers high-quality mobile, web, and enterprise apps that engage users and drive results.",
     aosDelay: "0",
   },
   {
@@ -17,7 +17,7 @@ const skillsData = [
     icon: <GiNotebook className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Our web development service focuses on creating robust, responsive websites that enhance your online presence. We build custom websites tailored to your brand, ensuring optimal performance, seamless user experience, and scalability to support your business growth.",
     aosDelay: "300",
   },
   {
@@ -25,7 +25,7 @@ const skillsData = [
     icon: <SlNote className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Our graphic design service brings your brand to life with compelling visuals. We create eye-catching designs that resonate with your audience, from logos and branding materials to marketing collateral and user interfaces, ensuring a cohesive and professional look across all platforms.",
     aosDelay: "500",
   },
   {
@@ -33,7 +33,7 @@ const skillsData = [
     icon: <SlNote className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Our digital marketing service helps your brand reach and engage the right audience. We develop comprehensive strategies, including SEO, social media marketing, content creation, and paid advertising, to boost your online visibility, drive traffic, and achieve your business goals.",
     aosDelay: "700",
   },
 ];

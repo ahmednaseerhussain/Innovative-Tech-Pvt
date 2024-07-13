@@ -1,10 +1,13 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-const BlogCard = ({ image, title, description }) => {
+const BlogCard = ({ image, title, description, link }) => {
+  const handleClick = () => {
+    window.open(link, "_blank");
+  };
   return (
     <>
-      <div className=" dark:text-white group">
+      <div className=" dark:text-white group cursor-pointer" onClick={handleClick}>
         <div className="overflow-hidden">
           <img
             src={image}

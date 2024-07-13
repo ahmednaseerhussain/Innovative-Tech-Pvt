@@ -1,10 +1,19 @@
 import React from "react";
 import yellowCar from "../../assets/website/team.png";
 import ParticlesContainer from "../ParticlesContainer/ParticlesContainer";
+import { scroller } from "react-scroll";
 
 const Hero = () => {
+  const handleLearnMoreClick = () => {
+    scroller.scrollTo('contact', {
+      duration: 500,
+      delay: 0,
+      smooth: "easeInOutQuart",
+      offset: -80,
+    });
+  };
   return (
-    <div className="dark:bg-gray-950 dark:text-white duration-300 relative">
+    <div className="dark:bg-gray-950 dark:text-white bg-custom-gradient duration-300 relative">
      
       
       <div className="container min-h-[620px] flex mt-10 sm:mt-0 relative z-10">
@@ -23,7 +32,7 @@ const Hero = () => {
             >
               <p className="text-gray-500 text-sm">⭐Projects</p>
               <h1 className="font-bold">
-                600+ <span className="font-normal">Done</span>
+                150+ <span className="font-normal">Done</span>
               </h1>
             </div>
           </div>
@@ -35,20 +44,18 @@ const Hero = () => {
               className="text-4xl sm:text-5xl font-semibold"
               style={{ lineHeight: 1.2 }}
             >
-              Building Brands in the{" "}
-              <span className="text-gradient">Digital Agency</span>
+              Transforming Ideas Into{" "}
+              <span className="text-gradient">Digital Reality</span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
-              Your partner in navigating the ever-evolving landscape of digital
-              marketing. From conceptualization to execution, we craft tailored
-              solutions that drive results and elevate your brand to new
-              heights.
+            Developed a high-engagement Web apps, Mobile application, e-commerce platform with advanced security and seamless payments, enhancing scalability and performance through teamwork.
             </p>
             <button
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-offset="0"
               className="primary-btn"
+              onClick={handleLearnMoreClick}
             >
               Learn More
             </button>
